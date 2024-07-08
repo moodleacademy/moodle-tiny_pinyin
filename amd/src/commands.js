@@ -23,21 +23,13 @@
 
 import {getButtonImage} from 'editor_tiny/utils';
 import {get_string as getString} from 'core/str';
+import {handleAction} from './ui';
 import {
     component,
     pinyinButtonName,
     pinyinMenuItemName,
     icon,
 } from './common';
-
-/**
- * Handle the action for your plugin.
- * @param {TinyMCE.editor} editor The tinyMCE editor instance.
- */
-const handleAction = (editor) => {
-    // TODO Handle the action.
-    window.console.log(editor);
-};
 
 /**
  * Get the setup function for the buttons.

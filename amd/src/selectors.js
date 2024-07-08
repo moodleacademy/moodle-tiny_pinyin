@@ -1,5 +1,4 @@
-<?php
-// This file is part of Moodle - https://moodle.org/
+// This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -12,21 +11,16 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin strings are defined here.
+ * tiny_pinyin selectors
  *
- * @package     tiny_pinyin
- * @category    string
+ * @module      tiny_pinyin/selectors
  * @copyright   2024 Your Name <you@example.com>
- * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-$string['button_pinyin'] = 'Insert Pinyin accents';
-$string['menuitem_pinyin'] = 'Insert Pinyin accents';
-$string['pluginname'] = 'Pinyin accents';
-$string['privacy:metadata'] = 'Pinyin accents does not store any personal data';
-$string['insertpinyin'] = 'Insert Pinyin accents';
+export default {
+    pinyinChar: '.tiny_pinyin_chars .tiny_pinyin_btn',
+};

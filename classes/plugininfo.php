@@ -50,10 +50,38 @@ class plugininfo extends plugin implements plugin_with_configuration, plugin_wit
         array $fpoptions,
         ?\editor_tiny\editor $editor = null
     ): array {
+
+    // Map of pinyin characters.
+    $charmap = [
+        ['id' => '&#257;', 'name' => '&#257;'],
+        ['id' => '&#225;', 'name' => '&#225;'],
+        ['id' => '&#462;', 'name' => '&#462;'],
+        ['id' => '&#224;', 'name' => '&#224;'],
+		['id' => '&#275;', 'name' => '&#275;'],
+		['id' => '&#233;', 'name' => '&#233;'],
+		['id' => '&#283;', 'name' => '&#283;'],
+		['id' => '&#232;', 'name' => '&#232;'],
+		['id' => '&#299;', 'name' => '&#299;'],
+		['id' => '&#237;', 'name' => '&#237;'],
+		['id' => '&#464;', 'name' => '&#464;'],
+		['id' => '&#236;', 'name' => '&#236;'],
+		['id' => '&#333;', 'name' => '&#333;'],
+		['id' => '&#243;', 'name' => '&#243;'],
+		['id' => '&#466;', 'name' => '&#466;'],
+		['id' => '&#242;', 'name' => '&#242;'],
+		['id' => '&#363;', 'name' => '&#363;'],
+		['id' => '&#250;', 'name' => '&#250;'],
+		['id' => '&#468;', 'name' => '&#468;'],
+		['id' => '&#249;', 'name' => '&#249;'],
+		['id' => '&#470;', 'name' => '&#470;'],
+		['id' => '&#472;', 'name' => '&#472;'],
+		['id' => '&#474;', 'name' => '&#474;'],
+		['id' => '&#476;', 'name' => '&#476;'],
+		['id' => '&#252;', 'name' => '&#252;'],
+    ];
         return [
-            // Your values go here.
             // These will be mapped to a namespaced EditorOption in Tiny.
-            'myFirstProperty' => 'TODO Calculate your values here',
+            'pinyinChars' => $charmap,
         ];
     }
 }

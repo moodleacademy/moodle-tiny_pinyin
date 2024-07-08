@@ -25,7 +25,7 @@ import {getPluginOptionName} from 'editor_tiny/options';
 import {pluginName} from './common';
 
 // Helper variables for the option names.
-const myFirstPropertyName = getPluginOptionName(pluginName, 'myFirstProperty');
+const pinyinCharmap = getPluginOptionName(pluginName, 'pinyinChars');
 
 /**
  * Options registration function.
@@ -37,15 +37,16 @@ export const register = (editor) => {
 
     // For each option, register it with the editor.
     // Valid type are defined in https://www.tiny.cloud/docs/tinymce/6/apis/tinymce.editoroptions/
-    registerOption(myFirstPropertyName, {
-        processor: 'string',
+    registerOption(pinyinCharmap, {
+        processor: 'array',
+        "default": [],
     });
 };
 
 /**
- * Fetch the myFirstProperty value for this editor instance.
+ * Fetch the pinyinCharmap value for this editor instance.
  *
  * @param {tinyMCE} editor The editor instance to fetch the value for
- * @returns {object} The value of the myFirstProperty option
+ * @returns {object} The value of the pinyinCharmap option
  */
-export const getMyFirstProperty = (editor) => editor.options.get(myFirstPropertyName);
+export const getPinyinChars = (editor) => editor.options.get(pinyinCharmap);
