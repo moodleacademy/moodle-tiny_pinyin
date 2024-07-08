@@ -2,6 +2,7 @@
 
 A Moodle TinyMCE subplugin to insert Pinyin characters.
 
+This is TinyMCE port of the [Atto Pinyin Characters](https://github.com/rjnl/moodle-atto_pinyin) plugin.
 This is a sample plugin created for use in Moodle Academy courses.
 
 ## Installing via uploaded ZIP file ##
