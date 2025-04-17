@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['button_pinyin'] = 'Insert Pinyin accents';
 $string['insertpinyin'] = 'Insert Pinyin accents';
 $string['menuitem_pinyin'] = 'Insert Pinyin accents';
+$string['pinyin:use'] = 'Use Tiny Pinyin accents';
 $string['pluginname'] = 'Pinyin accents';
 $string['privacy:metadata'] = 'Pinyin accents does not store any personal data';
